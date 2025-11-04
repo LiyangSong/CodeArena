@@ -1,1 +1,3 @@
-CodeArena is a high-performance online judge system inspired by LeetCode and Codeforces. It manages asynchronous code compilation and testing through a distributed Spring Boot backend, executing user code inside secure Docker sandboxes and leveraging AWS SQS for scalable job queues and Redis for fast result caching.
+## CodeArena — Distributed Online Judge with Asynchronous Execution
+
+CodeArena is a lightweight, distributed online judge system designed for concurrent and isolated code execution. It dispatches user submissions to sandboxed Docker containers via AWS SQS, enforcing resource isolation (CPU, memory, I/O) and asynchronous result retrieval. The system supports multi-language compilation and testing, backed by Redis caching for session and result management. The emphasis is on fault-tolerant job scheduling, secure container orchestration, and low-latency evaluation pipelines under concurrent load.
